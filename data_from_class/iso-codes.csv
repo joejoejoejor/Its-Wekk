@@ -1,0 +1,499 @@
+iso_code;variable;value
+ABW;region;Americas
+AFG;region;Asia
+AGO;region;Africa
+AIA;region;Americas
+ALA;region;Europe
+ALB;region;Europe
+AND;region;Europe
+ARE;region;Asia
+ARG;region;Americas
+ARM;region;Asia
+ASM;region;Oceania
+ATA;region;
+ATF;region;Africa
+ATG;region;Americas
+AUS;region;Oceania
+AUT;region;Europe
+AZE;region;Asia
+BDI;region;Africa
+BEL;region;Europe
+BEN;region;Africa
+BES;region;Americas
+BFA;region;Africa
+BGD;region;Asia
+BGR;region;Europe
+BHR;region;Asia
+BHS;region;Americas
+BIH;region;Europe
+BLM;region;Americas
+BLR;region;Europe
+BLZ;region;Americas
+BMU;region;Americas
+BOL;region;Americas
+BRA;region;Americas
+BRB;region;Americas
+BRN;region;Asia
+BTN;region;Asia
+BVT;region;Americas
+BWA;region;Africa
+CAF;region;Africa
+CAN;region;Americas
+CCK;region;Oceania
+CHE;region;Europe
+CHL;region;Americas
+CHN;region;Asia
+CIV;region;Africa
+CMR;region;Africa
+COD;region;Africa
+COG;region;Africa
+COK;region;Oceania
+COL;region;Americas
+COM;region;Africa
+CPV;region;Africa
+CRI;region;Americas
+CUB;region;Americas
+CUW;region;Americas
+CXR;region;Oceania
+CYM;region;Americas
+CYP;region;Asia
+CZE;region;Europe
+DEU;region;Europe
+DJI;region;Africa
+DMA;region;Americas
+DNK;region;Europe
+DOM;region;Americas
+DZA;region;Africa
+ECU;region;Americas
+EGY;region;Africa
+ERI;region;Africa
+ESH;region;Africa
+ESP;region;Europe
+EST;region;Europe
+ETH;region;Africa
+FIN;region;Europe
+FJI;region;Oceania
+FLK;region;Americas
+FRA;region;Europe
+FRO;region;Europe
+FSM;region;Oceania
+GAB;region;Africa
+GBR;region;Europe
+GEO;region;Asia
+GGY;region;Europe
+GHA;region;Africa
+GIB;region;Europe
+GIN;region;Africa
+GLP;region;Americas
+GMB;region;Africa
+GNB;region;Africa
+GNQ;region;Africa
+GRC;region;Europe
+GRD;region;Americas
+GRL;region;Americas
+GTM;region;Americas
+GUF;region;Americas
+GUM;region;Oceania
+GUY;region;Americas
+HKG;region;Asia
+HMD;region;Oceania
+HND;region;Americas
+HRV;region;Europe
+HTI;region;Americas
+HUN;region;Europe
+IDN;region;Asia
+IMN;region;Europe
+IND;region;Asia
+IOT;region;Africa
+IRL;region;Europe
+IRN;region;Asia
+IRQ;region;Asia
+ISL;region;Europe
+ISR;region;Asia
+ITA;region;Europe
+JAM;region;Americas
+JEY;region;Europe
+JOR;region;Asia
+JPN;region;Asia
+KAZ;region;Asia
+KEN;region;Africa
+KGZ;region;Asia
+KHM;region;Asia
+KIR;region;Oceania
+KNA;region;Americas
+KOR;region;Asia
+KWT;region;Asia
+LAO;region;Asia
+LBN;region;Asia
+LBR;region;Africa
+LBY;region;Africa
+LCA;region;Americas
+LIE;region;Europe
+LKA;region;Asia
+LSO;region;Africa
+LTU;region;Europe
+LUX;region;Europe
+LVA;region;Europe
+MAC;region;Asia
+MAF;region;Americas
+MAR;region;Africa
+MCO;region;Europe
+MDA;region;Europe
+MDG;region;Africa
+MDV;region;Asia
+MEX;region;Americas
+MHL;region;Oceania
+MKD;region;Europe
+MLI;region;Africa
+MLT;region;Europe
+MMR;region;Asia
+MNE;region;Europe
+MNG;region;Asia
+MNP;region;Oceania
+MOZ;region;Africa
+MRT;region;Africa
+MSR;region;Americas
+MTQ;region;Americas
+MUS;region;Africa
+MWI;region;Africa
+MYS;region;Asia
+MYT;region;Africa
+NAM;region;Africa
+NCL;region;Oceania
+NER;region;Africa
+NFK;region;Oceania
+NGA;region;Africa
+NIC;region;Americas
+NIU;region;Oceania
+NLD;region;Europe
+NOR;region;Europe
+NPL;region;Asia
+NRU;region;Oceania
+NZL;region;Oceania
+OMN;region;Asia
+PAK;region;Asia
+PAN;region;Americas
+PCN;region;Oceania
+PER;region;Americas
+PHL;region;Asia
+PLW;region;Oceania
+PNG;region;Oceania
+POL;region;Europe
+PRI;region;Americas
+PRK;region;Asia
+PRT;region;Europe
+PRY;region;Americas
+PSE;region;Asia
+PYF;region;Oceania
+QAT;region;Asia
+REU;region;Africa
+ROU;region;Europe
+RUS;region;Europe
+RWA;region;Africa
+SAU;region;Asia
+SDN;region;Africa
+SEN;region;Africa
+SGP;region;Asia
+SGS;region;Americas
+SHN;region;Africa
+SJM;region;Europe
+SLB;region;Oceania
+SLE;region;Africa
+SLV;region;Americas
+SMR;region;Europe
+SOM;region;Africa
+SPM;region;Americas
+SRB;region;Europe
+SSD;region;Africa
+STP;region;Africa
+SUR;region;Americas
+SVK;region;Europe
+SVN;region;Europe
+SWE;region;Europe
+SWZ;region;Africa
+SXM;region;Americas
+SYC;region;Africa
+SYR;region;Asia
+TCA;region;Americas
+TCD;region;Africa
+TGO;region;Africa
+THA;region;Asia
+TJK;region;Asia
+TKL;region;Oceania
+TKM;region;Asia
+TLS;region;Asia
+TON;region;Oceania
+TTO;region;Americas
+TUN;region;Africa
+TUR;region;Asia
+TUV;region;Oceania
+TWN;region;Asia
+TZA;region;Africa
+UGA;region;Africa
+UKR;region;Europe
+UMI;region;Oceania
+URY;region;Americas
+USA;region;Americas
+UZB;region;Asia
+VAT;region;Europe
+VCT;region;Americas
+VEN;region;Americas
+VGB;region;Americas
+VIR;region;Americas
+VNM;region;Asia
+VUT;region;Oceania
+WLF;region;Oceania
+WSM;region;Oceania
+YEM;region;Asia
+ZAF;region;Africa
+ZMB;region;Africa
+ZWE;region;Africa
+ABW;sub-region;Latin America and the Caribbean
+AFG;sub-region;Southern Asia
+AGO;sub-region;Sub-Saharan Africa
+AIA;sub-region;Latin America and the Caribbean
+ALA;sub-region;Northern Europe
+ALB;sub-region;Southern Europe
+AND;sub-region;Southern Europe
+ARE;sub-region;Western Asia
+ARG;sub-region;Latin America and the Caribbean
+ARM;sub-region;Western Asia
+ASM;sub-region;Polynesia
+ATA;sub-region;
+ATF;sub-region;Sub-Saharan Africa
+ATG;sub-region;Latin America and the Caribbean
+AUS;sub-region;Australia and New Zealand
+AUT;sub-region;Western Europe
+AZE;sub-region;Western Asia
+BDI;sub-region;Sub-Saharan Africa
+BEL;sub-region;Western Europe
+BEN;sub-region;Sub-Saharan Africa
+BES;sub-region;Latin America and the Caribbean
+BFA;sub-region;Sub-Saharan Africa
+BGD;sub-region;Southern Asia
+BGR;sub-region;Eastern Europe
+BHR;sub-region;Western Asia
+BHS;sub-region;Latin America and the Caribbean
+BIH;sub-region;Southern Europe
+BLM;sub-region;Latin America and the Caribbean
+BLR;sub-region;Eastern Europe
+BLZ;sub-region;Latin America and the Caribbean
+BMU;sub-region;Northern America
+BOL;sub-region;Latin America and the Caribbean
+BRA;sub-region;Latin America and the Caribbean
+BRB;sub-region;Latin America and the Caribbean
+BRN;sub-region;South-eastern Asia
+BTN;sub-region;Southern Asia
+BVT;sub-region;Latin America and the Caribbean
+BWA;sub-region;Sub-Saharan Africa
+CAF;sub-region;Sub-Saharan Africa
+CAN;sub-region;Northern America
+CCK;sub-region;Australia and New Zealand
+CHE;sub-region;Western Europe
+CHL;sub-region;Latin America and the Caribbean
+CHN;sub-region;Eastern Asia
+CIV;sub-region;Sub-Saharan Africa
+CMR;sub-region;Sub-Saharan Africa
+COD;sub-region;Sub-Saharan Africa
+COG;sub-region;Sub-Saharan Africa
+COK;sub-region;Polynesia
+COL;sub-region;Latin America and the Caribbean
+COM;sub-region;Sub-Saharan Africa
+CPV;sub-region;Sub-Saharan Africa
+CRI;sub-region;Latin America and the Caribbean
+CUB;sub-region;Latin America and the Caribbean
+CUW;sub-region;Latin America and the Caribbean
+CXR;sub-region;Australia and New Zealand
+CYM;sub-region;Latin America and the Caribbean
+CYP;sub-region;Western Asia
+CZE;sub-region;Eastern Europe
+DEU;sub-region;Western Europe
+DJI;sub-region;Sub-Saharan Africa
+DMA;sub-region;Latin America and the Caribbean
+DNK;sub-region;Northern Europe
+DOM;sub-region;Latin America and the Caribbean
+DZA;sub-region;Northern Africa
+ECU;sub-region;Latin America and the Caribbean
+EGY;sub-region;Northern Africa
+ERI;sub-region;Sub-Saharan Africa
+ESH;sub-region;Northern Africa
+ESP;sub-region;Southern Europe
+EST;sub-region;Northern Europe
+ETH;sub-region;Sub-Saharan Africa
+FIN;sub-region;Northern Europe
+FJI;sub-region;Melanesia
+FLK;sub-region;Latin America and the Caribbean
+FRA;sub-region;Western Europe
+FRO;sub-region;Northern Europe
+FSM;sub-region;Micronesia
+GAB;sub-region;Sub-Saharan Africa
+GBR;sub-region;Northern Europe
+GEO;sub-region;Western Asia
+GGY;sub-region;Northern Europe
+GHA;sub-region;Sub-Saharan Africa
+GIB;sub-region;Southern Europe
+GIN;sub-region;Sub-Saharan Africa
+GLP;sub-region;Latin America and the Caribbean
+GMB;sub-region;Sub-Saharan Africa
+GNB;sub-region;Sub-Saharan Africa
+GNQ;sub-region;Sub-Saharan Africa
+GRC;sub-region;Southern Europe
+GRD;sub-region;Latin America and the Caribbean
+GRL;sub-region;Northern America
+GTM;sub-region;Latin America and the Caribbean
+GUF;sub-region;Latin America and the Caribbean
+GUM;sub-region;Micronesia
+GUY;sub-region;Latin America and the Caribbean
+HKG;sub-region;Eastern Asia
+HMD;sub-region;Australia and New Zealand
+HND;sub-region;Latin America and the Caribbean
+HRV;sub-region;Southern Europe
+HTI;sub-region;Latin America and the Caribbean
+HUN;sub-region;Eastern Europe
+IDN;sub-region;South-eastern Asia
+IMN;sub-region;Northern Europe
+IND;sub-region;Southern Asia
+IOT;sub-region;Sub-Saharan Africa
+IRL;sub-region;Northern Europe
+IRN;sub-region;Southern Asia
+IRQ;sub-region;Western Asia
+ISL;sub-region;Northern Europe
+ISR;sub-region;Western Asia
+ITA;sub-region;Southern Europe
+JAM;sub-region;Latin America and the Caribbean
+JEY;sub-region;Northern Europe
+JOR;sub-region;Western Asia
+JPN;sub-region;Eastern Asia
+KAZ;sub-region;Central Asia
+KEN;sub-region;Sub-Saharan Africa
+KGZ;sub-region;Central Asia
+KHM;sub-region;South-eastern Asia
+KIR;sub-region;Micronesia
+KNA;sub-region;Latin America and the Caribbean
+KOR;sub-region;Eastern Asia
+KWT;sub-region;Western Asia
+LAO;sub-region;South-eastern Asia
+LBN;sub-region;Western Asia
+LBR;sub-region;Sub-Saharan Africa
+LBY;sub-region;Northern Africa
+LCA;sub-region;Latin America and the Caribbean
+LIE;sub-region;Western Europe
+LKA;sub-region;Southern Asia
+LSO;sub-region;Sub-Saharan Africa
+LTU;sub-region;Northern Europe
+LUX;sub-region;Western Europe
+LVA;sub-region;Northern Europe
+MAC;sub-region;Eastern Asia
+MAF;sub-region;Latin America and the Caribbean
+MAR;sub-region;Northern Africa
+MCO;sub-region;Western Europe
+MDA;sub-region;Eastern Europe
+MDG;sub-region;Sub-Saharan Africa
+MDV;sub-region;Southern Asia
+MEX;sub-region;Latin America and the Caribbean
+MHL;sub-region;Micronesia
+MKD;sub-region;Southern Europe
+MLI;sub-region;Sub-Saharan Africa
+MLT;sub-region;Southern Europe
+MMR;sub-region;South-eastern Asia
+MNE;sub-region;Southern Europe
+MNG;sub-region;Eastern Asia
+MNP;sub-region;Micronesia
+MOZ;sub-region;Sub-Saharan Africa
+MRT;sub-region;Sub-Saharan Africa
+MSR;sub-region;Latin America and the Caribbean
+MTQ;sub-region;Latin America and the Caribbean
+MUS;sub-region;Sub-Saharan Africa
+MWI;sub-region;Sub-Saharan Africa
+MYS;sub-region;South-eastern Asia
+MYT;sub-region;Sub-Saharan Africa
+NAM;sub-region;Sub-Saharan Africa
+NCL;sub-region;Melanesia
+NER;sub-region;Sub-Saharan Africa
+NFK;sub-region;Australia and New Zealand
+NGA;sub-region;Sub-Saharan Africa
+NIC;sub-region;Latin America and the Caribbean
+NIU;sub-region;Polynesia
+NLD;sub-region;Western Europe
+NOR;sub-region;Northern Europe
+NPL;sub-region;Southern Asia
+NRU;sub-region;Micronesia
+NZL;sub-region;Australia and New Zealand
+OMN;sub-region;Western Asia
+PAK;sub-region;Southern Asia
+PAN;sub-region;Latin America and the Caribbean
+PCN;sub-region;Polynesia
+PER;sub-region;Latin America and the Caribbean
+PHL;sub-region;South-eastern Asia
+PLW;sub-region;Micronesia
+PNG;sub-region;Melanesia
+POL;sub-region;Eastern Europe
+PRI;sub-region;Latin America and the Caribbean
+PRK;sub-region;Eastern Asia
+PRT;sub-region;Southern Europe
+PRY;sub-region;Latin America and the Caribbean
+PSE;sub-region;Western Asia
+PYF;sub-region;Polynesia
+QAT;sub-region;Western Asia
+REU;sub-region;Sub-Saharan Africa
+ROU;sub-region;Eastern Europe
+RUS;sub-region;Eastern Europe
+RWA;sub-region;Sub-Saharan Africa
+SAU;sub-region;Western Asia
+SDN;sub-region;Northern Africa
+SEN;sub-region;Sub-Saharan Africa
+SGP;sub-region;South-eastern Asia
+SGS;sub-region;Latin America and the Caribbean
+SHN;sub-region;Sub-Saharan Africa
+SJM;sub-region;Northern Europe
+SLB;sub-region;Melanesia
+SLE;sub-region;Sub-Saharan Africa
+SLV;sub-region;Latin America and the Caribbean
+SMR;sub-region;Southern Europe
+SOM;sub-region;Sub-Saharan Africa
+SPM;sub-region;Northern America
+SRB;sub-region;Southern Europe
+SSD;sub-region;Sub-Saharan Africa
+STP;sub-region;Sub-Saharan Africa
+SUR;sub-region;Latin America and the Caribbean
+SVK;sub-region;Eastern Europe
+SVN;sub-region;Southern Europe
+SWE;sub-region;Northern Europe
+SWZ;sub-region;Sub-Saharan Africa
+SXM;sub-region;Latin America and the Caribbean
+SYC;sub-region;Sub-Saharan Africa
+SYR;sub-region;Western Asia
+TCA;sub-region;Latin America and the Caribbean
+TCD;sub-region;Sub-Saharan Africa
+TGO;sub-region;Sub-Saharan Africa
+THA;sub-region;South-eastern Asia
+TJK;sub-region;Central Asia
+TKL;sub-region;Polynesia
+TKM;sub-region;Central Asia
+TLS;sub-region;South-eastern Asia
+TON;sub-region;Polynesia
+TTO;sub-region;Latin America and the Caribbean
+TUN;sub-region;Northern Africa
+TUR;sub-region;Western Asia
+TUV;sub-region;Polynesia
+TWN;sub-region;Eastern Asia
+TZA;sub-region;Sub-Saharan Africa
+UGA;sub-region;Sub-Saharan Africa
+UKR;sub-region;Eastern Europe
+UMI;sub-region;Micronesia
+URY;sub-region;Latin America and the Caribbean
+USA;sub-region;Northern America
+UZB;sub-region;Central Asia
+VAT;sub-region;Southern Europe
+VCT;sub-region;Latin America and the Caribbean
+VEN;sub-region;Latin America and the Caribbean
+VGB;sub-region;Latin America and the Caribbean
+VIR;sub-region;Latin America and the Caribbean
+VNM;sub-region;South-eastern Asia
+VUT;sub-region;Melanesia
+WLF;sub-region;Polynesia
+WSM;sub-region;Polynesia
+YEM;sub-region;Western Asia
+ZAF;sub-region;Sub-Saharan Africa
+ZMB;sub-region;Sub-Saharan Africa
+ZWE;sub-region;Sub-Saharan Africa
