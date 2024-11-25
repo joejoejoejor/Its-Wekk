@@ -162,7 +162,7 @@ for epoch in range(epochs):
     loss_list.append(res["loss"])
     misclassification_list.append(res["misclassifications"])    
         
-    # Print the current status (🙀 🤯 ignore this part!)
+    # Print the current status ( ignore this part!)
     bar = "".join(["#" if epoch >= t * (epochs // 50) else " " for t in range(50)])
     stdout.write(f"\rEpoch: {epoch+1:>{int(np.floor(np.log10(epochs))+1)}}/{epochs} [{bar}]")
 
@@ -173,20 +173,20 @@ for epoch in range(epochs):
 
 
     # Set up the canvas
-fig, axs = plt.subplots(1, 2, figsize=(16, 8))
+#fig, axs = plt.subplots(1, 2, figsize=(16, 8))
 # Plot the loss over the epochs (epoch 0 is before training!)
-axs[0].plot(range(len(loss_list)), loss_list)
+#axs[0].plot(range(len(loss_list)), loss_list)
 # Plot the misclassification rate over the epochs
-axs[1].plot(range(len(misclassification_list)), misclassification_list)
+#axs[1].plot(range(len(misclassification_list)), misclassification_list)
 # Add title, grid, axis labels
-for ax in axs:
-    ax.grid(True)
-    ax.set_xlabel("Epoch number")
-axs[0].set_ylabel("Loss (negative log-likelihood)")
-axs[0].set_title("Evolution of loss function over training epochs")
-axs[1].set_ylabel("Misclassification rate")
-axs[1].set_title("Evolution of missclassification rate over training epochs")
-
+#for ax in axs:
+#    ax.grid(True)
+#    ax.set_xlabel("Epoch number")
+#axs[0].set_ylabel("Loss (negative log-likelihood)")
+#axs[0].set_title("Evolution of loss function over training epochs")
+#axs[1].set_ylabel("Misclassification rate")
+#axs[1].set_title("Evolution of missclassification rate over training epochs")
+""""""""
 
 
 
