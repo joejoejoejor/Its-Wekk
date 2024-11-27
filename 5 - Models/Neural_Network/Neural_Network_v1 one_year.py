@@ -8,32 +8,29 @@ from sys import stdout
 
 
 # Read in the dataset
-DF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\5 - Models\Neural_Network\Data\Working_DataFrame_NN.csv")
+DF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\5 - Models\Neural_Network\Data\DF_NN_Year.csv")
 # Drop useless columns
-DF.drop(columns=["Weekday"], inplace=True)
+DF.drop(columns=["Datum","Weekday"], inplace=True)
 
 
 
 X = np.array(DF).astype(np.float16)
 
-TargetDF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\5 - Models\Neural_Network\Data\Final_Target_Data_Combined_resid_Trend.csv")
+TargetDF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\5 - Models\Neural_Network\Data\Final_Target_NN_Year.csv")
 
-TargetDF = TargetDF[TargetDF['Datum'] <= '2024-10-20 21:00:00+00:00']
-
-# no need to drop the date column
-#TargetDF = TargetDF.drop(columns=["Datum"], inplace=True)
+#TargetDF = TargetDF[TargetDF['Datum'] <= '2024-10-20 21:00:00+00:00']
+TargetDF.drop(columns=["Datum"], inplace=True)
 
 # Get one-hot-encoded target
 Y = np.array(pd.get_dummies(TargetDF["PM10_Combined_Trend_Residual"])).astype(np.float16)
 
-Y = TargetDF["PM10_Combined_Trend_Residual"].values.reshape(-1, 1).astype(np.float16)
 
 
 # Initialize some parameters
 N, d = X.shape # Number of observations and features
 L = Y.shape[1] # Number of outputs
 
-sl = 16 # Number of hidden nodes
+sl = 50 # Number of hidden nodes
 epochs = 100 # Number of training epochs
 eta = 0.01 # Learning rate
 init_range = [-.5, .5] # The range of our uniform distribution for weight initialization
@@ -44,9 +41,8 @@ init_range = [-.5, .5] # The range of our uniform distribution for weight initia
 np.random.seed(72) # Set seed
 W1 = np.random.rand(sl, d) # Randomly initialize W1
 W1 = W1 * (init_range[1] - init_range[0]) - init_range[0] # Constrain to range
-#W2 = np.random.rand(L, sl) # Randomly initialize W2
-#W2 = W2 * (init_range[1] - init_range[0]) - init_range[0] # Constrain to range
-W2 = np.random.uniform(init_range[0], init_range[1], size=(1, sl))  # Shape (1, sl)
+W2 = np.random.rand(L, sl) # Randomly initialize W2
+W2 = W2 * (init_range[1] - init_range[0]) - init_range[0] # Constrain to range
 
 
 # We will use the sigmoid function as the activation function
@@ -94,10 +90,7 @@ def eval_predictions(X, Y, W1, W2):
     # To avoid log(0), clip the probability to not be exactly zero or one
     prob = np.clip(prob, 1e-8, 1-1e-8)
     # Calculate the loss function (negative log-likelihood in this case)
-    #loss = - np.sum(Y * np.log(prob) + (1 - Y) * np.log(1 - prob))
-    #use the MSE for Loss
-    loss = np.mean((Y - prob) ** 2)
-
+    loss = - np.sum(Y * np.log(prob) + (1 - Y) * np.log(1 - prob))
 
     # For the actual prediction, we select the outcome with the highest probability. 
     # Unlike in the previous case, the two probabilities need not add up to 1!
@@ -174,7 +167,7 @@ for epoch in range(epochs):
         # Compute the gradient w.r.t. W2. ⚠️ W2 is a vector! See math derivations
         grad2_i = -Zi.T @ error_i # ⚠️ error_i is now 1 x L, and Zi is sl x 1
         # Compute the gradient w.r.t. W1. ⚠️ W1 is matrix! Making things even worse
-        grad1_i = -Xi.T @ ((error_i @ W2) * Zi * (1 - Zi)) # ⚠️ error_i is now 1 x L
+        grad1_i = -Xi.T @ (error_i @ (W2 * Zi * (1 - Zi))) # ⚠️ error_i is now 1 x L
         
         # Updating: Move 'eta' units in the direction of the negative gradient
         W1 -= (eta * grad1_i).T
@@ -211,13 +204,13 @@ for epoch in range(epochs):
 #axs[1].set_title("Evolution of missclassification rate over training epochs")
 """"""""
 
-print(W1.T.shape)
+
 
 # Display the weight matrix from the input layer to the hidden layer
-pd.DataFrame(W1.T, columns=[f"Z{i}" for i in range(sl)], index=[f"X{i+1}" for i in range(d)])
+pd.DataFrame(W1.T, columns=[f"Z{i}" for i in range(sl)], index=["X1", "X2"])
 
 
 
 
 # Display the weight matrix  from the hidden layer to the output layer
-pd.DataFrame(W2.T, columns=[f"Y{i}" for i range(L)], index=[f"Z{i}" for i in range(sl)])
+pd.DataFrame(W2.T, columns=["Y0", "Y1"], index=[f"Z{i}" for i in range(sl)])
