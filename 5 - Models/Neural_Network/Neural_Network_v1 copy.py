@@ -114,6 +114,8 @@ def eval_predictions(X, Y, W1, W2):
         "pred": pred
     }
 
+def mean_squared_error(y_true, y_pred):
+    return np.mean((y_true - y_pred) ** 2)
 
 
 
@@ -137,6 +139,8 @@ res = eval_predictions(X, Y, W1, W2)
 # Append to our result lists
 loss_list.append(res["loss"])
 misclassification_list.append(res["misclassifications"])
+
+total_mse = 0
 
 # Run the full training loop (iterate over the number of training epochs)
 for epoch in range(epochs):
@@ -165,6 +169,10 @@ for epoch in range(epochs):
         prob_i = sigmoid(Ti)
         # ⚠️ Notice that we now have two probabilities!!
         
+
+        #MSE
+        mse_i = mean_squared_error(Yi, prob_i)
+        total_mse += mse_i
         
         # ----- Backward pass -----
         # ⚠️ Since we have two output nodes, and two probabilities for prediction
@@ -188,7 +196,8 @@ for epoch in range(epochs):
     # Print the current status ( ignore this part!)
     bar = "".join(["#" if epoch >= t * (epochs // 50) else " " for t in range(50)])
     stdout.write(f"\rEpoch: {epoch+1:>{int(np.floor(np.log10(epochs))+1)}}/{epochs} [{bar}]")
-
+    avg_mse = total_mse / len(indices)
+    print(f"Epoch {epoch+1}/{epochs}, MSE: {avg_mse:.4f}")
 
 
 
@@ -209,7 +218,7 @@ for epoch in range(epochs):
 #axs[0].set_title("Evolution of loss function over training epochs")
 #axs[1].set_ylabel("Misclassification rate")
 #axs[1].set_title("Evolution of missclassification rate over training epochs")
-""""""""
+
 
 print(W1.T.shape)
 
@@ -220,4 +229,4 @@ pd.DataFrame(W1.T, columns=[f"Z{i}" for i in range(sl)], index=[f"X{i+1}" for i 
 
 
 # Display the weight matrix  from the hidden layer to the output layer
-pd.DataFrame(W2.T, columns=[f"Y{i}" for i range(L)], index=[f"Z{i}" for i in range(sl)])
+pd.DataFrame(W2.T, columns=[f"Y{i}" for i in range(L)], index=[f"Z{i}" for i in range(sl)])
