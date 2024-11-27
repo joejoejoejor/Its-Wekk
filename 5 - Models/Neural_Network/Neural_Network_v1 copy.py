@@ -8,7 +8,7 @@ from sys import stdout
 
 
 # Read in the WDBC dataset
-DF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\4 - Data\1 - Max\Working_DataFrame_NN.csv")
+DF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\5 - Models\Neural_Network\Data\Working_DataFrame_NN.csv")
 # Keep only necessary columns: the diagnosis, the perimeter, and the severity of concave portions
 # of the cell nucleus
 DF.drop(columns=["Weekday"], inplace=True)
@@ -17,7 +17,10 @@ DF.drop(columns=["Weekday"], inplace=True)
 
 X = np.array(DF).astype(np.float16)
 
-TargetDF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\4 - Data\Final_Data\Cleaned\Final_Target_Data_Combined_resid_Trend.csv")
+TargetDF = pd.read_csv(r"C:\Users\maxd2\OneDrive - Universitaet St.Gallen\Dokumente\GitHub\Its-Wekk\5 - Models\Neural_Network\Data\Final_Target_Data_Combined_resid_Trend.csv")
+
+TargetDF = TargetDF[TargetDF['Datum'] <= '2024-10-20 21:00:00+00:00']
+
 
 # Get one-hot-encoded target
 Y = np.array(pd.get_dummies(TargetDF["PM10_Combined_Trend_Residual"])).astype(np.float16)
@@ -26,7 +29,9 @@ Y = np.array(pd.get_dummies(TargetDF["PM10_Combined_Trend_Residual"])).astype(np
 
 # Initialize some parameters
 N, d = X.shape # Number of observations and features
-L = Y.shape[1] # Number of outputs
+#L = Y.shape[1] # Number of outputs
+# taking L = 1 because there is only one output
+L = 1
 sl = 50 # Number of hidden nodes
 epochs = 100 # Number of training epochs
 eta = 0.01 # Learning rate
@@ -47,19 +52,31 @@ sigmoid = lambda x: 1 / (1 + np.exp(-x))
 
 
 def forward_pass(X, W1, W2):
-    # Compute the matrix multiplication of the input layer
-    S = X @ W1.T
-    
-    # Pass through the non-linear activation function
-    Z = sigmoid(S)
-    
-    # Compute the matrix multiplication of the hidden layer
-    T = Z @ W2.T
-    
-    # Pass through the non-linear activation function 
-    # (This should always be sigmoid for the output to be (0, 1))
-    # ⚠️ Notice how we don't flatten the output anymore, this time we want to keep it a matrix!
-    return sigmoid(T)
+    try:
+        print("Step 1: Start forward pass")
+
+        # Compute the matrix multiplication of the input layer
+        S = X @ W1.T
+        print("Step 2: After input layer multiplication, S shape:", S.shape)
+ 
+        # Pass through the non-linear activation function
+        Z = sigmoid(S)
+        print("Step 3: After activation function, Z shape:", Z.shape)
+
+        # Compute the matrix multiplication of the hidden layer
+        T = Z @ W2.T
+        print("Step 4: After hidden layer multiplication, T shape:", T.shape)
+
+        # Pass through the non-linear activation function 
+        # (This should always be sigmoid for the output to be (0, 1))
+        # ⚠️ Notice how we don't flatten the output anymore, this time we want to keep it a matrix!
+        output = sigmoid(T)
+        print("Step 5: Final output computed, output shape:", output.shape)
+
+        return output
+    except Exception as e:
+            print("Error occurred:", str(e))
+            raise
 
 
 # Check that the output of a forward pass is indeed an NxL matrix
